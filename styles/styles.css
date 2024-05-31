@@ -197,16 +197,6 @@ button {
 
 }
 
-.header-text {
-    margin-top: 40px;
-    position: absolute;
-    left: 8.61%;
-    right: 65.85%;
-    /* top: 404.50%;
-    bottom: -100.23%; */
-    text-align: left;
-}
-
 .header-text h3 {
     width: 192px;
     height: 29px;
@@ -216,7 +206,6 @@ button {
     font-weight: 500;
     line-height: 29px;
     letter-spacing: 0%;
-    text-align: left;
 }
 
 .header-text h1 {
@@ -240,4 +229,19 @@ button {
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0%;
+}
+
+#description{
+    padding: 60px 140px;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill{
+    padding: 10px;
+    border-radius: 16px;
 }
