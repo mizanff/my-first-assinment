@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Merriweather", serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -31,7 +32,7 @@ header {
     top: 227px;
     bottom: -21px;
     font-family: Merriweather;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0;
@@ -43,6 +44,7 @@ header {
     color: rgb(255, 255, 255);
     width: 632px;
     height: 190px;
+    font-size: 50px;
     left: 484px;
     right: -484px;
     top: 283px;
@@ -52,7 +54,6 @@ header {
     line-height: 95px;
     letter-spacing: 0%;
     text-align: center;
-
 }
 
 .section-img img {
@@ -102,39 +103,37 @@ header {
 .container {
     width: 1320px;
     margin: 50px auto;
-    padding: 0 30px;
+    display: flex;
 }
 
-.banner {
+.container-banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #background-img {
+    padding: 50px;
+    background-repeat: no-repeat;
     width: 1320px;
     height: 600px;
-    margin: 0 auto;
+    margin: 50px auto;
     background-image: url(../resources/Vectorrr.png);
 }
 
-.banner .container-text * {
-    margin-bottom: 15px;
-    max-width: 856px;
-    padding: 20px;
+.container-banner .container-text * {
+    margin-bottom: 30px;
 }
 
-.banner .container-text h1 {
+.container-banner .container-text h1 {
     color: rgb(255, 255, 255);
     font-family: Merriweather;
     font-size: 55px;
     font-weight: 900;
-    line-height: 88px;
-    letter-spacing: 11%;
     text-align: left;
 }
 
-.banner .container-text p {
+.container-banner .container-text p {
     color: rgba(255, 255, 255, 0.8);
     font-family: Inter;
     font-size: 18px;
@@ -144,16 +143,9 @@ header {
     text-align: left;
 }
 
-button {
+.container-text h3 {
     color: rgb(255, 255, 255);
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: uppercase;
-    top: 30px;
+    margin-left: 20px;
 }
 
 .banner .container-img {
@@ -194,7 +186,118 @@ button {
     justify-content: center;
     align-items: center;
     padding: 10px 20px 10px 20px;
+}
 
+.comming-soon {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 80px;
+    margin-top: 100px;
+}
+
+.commming-img {
+    box-sizing: border-box;
+    border: 15px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.comming-text h3 {
+    color: rgb(255, 0, 0);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    padding-bottom: 10px;
+}
+
+.comming-text h2 {
+    color: rgb(7, 2, 17);
+    font-family: Merriweather;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 50px;
+    letter-spacing: 0%;
+    padding-bottom: 8px;
+}
+
+.comming-text p {
+    width: 393px;
+    height: 128px;
+    color: rgba(7, 2, 17, 0.6);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.comming-content h2 {
+    color: rgb(255, 0, 0);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0%;
+    padding: 4px;
+}
+
+.comming-content p {
+    width: 276px;
+    height: 96px;
+    color: rgba(7, 2, 17, 0.6);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.comming-content img {
+    margin-top: 15px;
+}
+
+.holiday-text {
+    text-align: center;
+}
+
+.holiday-text h3 {
+    color: rgb(7, 2, 17);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    width: 263px;
+    height: 29px;
+    margin: auto;
+}
+
+.holiday-text h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 91px;
+    letter-spacing: 0%;
+    width: 677px;
+    height: 91px;
+    margin: auto;
+}
+
+.Holiday {
+    color: red;
+}
+
+.holiday-text p {
+    color: rgba(7, 2, 17, 0.6);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0%;
+    width: 1068px;
+    height: 96px;
+    margin: auto;
 }
 
 .header-text h3 {
@@ -231,8 +334,49 @@ button {
     letter-spacing: 0%;
 }
 
+.holiday-content {
+    display: flex;
+    position: absolute;
+    width: 1320px;
+    height: 229px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.holiday-img-1 {
+    width: 205.96px;
+    height: 154.4px;
+    left: 264.67%;
+    right: -264.67%;
+    top: 2593.44%;
+    bottom: -2593.44%;
+}
+
+.holiday-img-2 {
+    position: absolute;
+    width: 42px;
+    height: 29px;
+    top: 0;
+    right: 550px;
+}
+
+.holiday-img-3 {
+    width: 429px;
+    height: 433px;
+    top: 3925px;
+    bottom: -3925px;
+}
+
+.holiday-img-4 {
+    text-align: center;
+}
+
+.holiday-img-4 img {
+    margin-top: 480px;
+}
+
 #description {
-    padding: 60px 140px;
+    padding: 50px 140px;
 }
 
 .skills-container {
@@ -252,7 +396,6 @@ button {
     margin: 80px 140px;
     border-radius: 16px;
     background: rgba(255, 0, 0, 0.05);
-
 }
 
 .newsletter {
@@ -341,5 +484,4 @@ footer {
 
 #description {
     margin-top: 130px;
-
 }
